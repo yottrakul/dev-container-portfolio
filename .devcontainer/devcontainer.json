@@ -12,5 +12,13 @@
         "oven.bun-vscode"
       ]
     }
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "portsAttributes": {
+    "3000": {
+      "onAutoForward": "openBrowser" // เปิดเบราว์เซอร์อัตโนมัติ (ถ้าต้องการ)
+    }
   }
 }

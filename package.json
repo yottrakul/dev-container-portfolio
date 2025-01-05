@@ -1,14 +1,20 @@
 {
-  "name": "frontend",
+  "name": "dev-container-portfolio",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
   },
-  "dependencies": {
-    "astro": "^5.1.2"
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tsconfig/svelte": "^5.0.4",
+    "svelte": "^5.15.0",
+    "svelte-check": "^4.1.1",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
   }
 }
